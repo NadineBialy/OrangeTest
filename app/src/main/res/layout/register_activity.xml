@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E04A2C40"
+    android:textAlignment="center"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="197dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="9dp"
+        android:letterSpacing="41"
+        android:text="Create account"
+        android:textAlignment="center"
+        android:textColor="#B7A496"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/EnterUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/EnterUsername"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="2dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:shadowColor="#803A0543"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shape="rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="3dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Email"
+        android:shadowColor="#803A0543"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shape="rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/EnterPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterUsername" />
+
+    <EditText
+        android:id="@+id/EnterPassword"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="6dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Password"
+        android:shadowColor="#803A0543"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shape="rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="15dp"
+        android:background="#E9BD43"
+        android:onClick="register"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/social"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="383.04dp"
+        android:layout_height="237.25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/Welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/man" />
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="160dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="10dp"
+        android:text="or use Social media"
+        android:textAlignment="center"
+        android:textColor="#B7A496"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regButton" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/goregister"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/social"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/social"
+        app:srcCompat="@drawable/fb_icon_325x325" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="171dp"
+        android:layout_height="21dp"
+        android:text="Already have an acocunt?"
+        android:textAlignment="center"
+        android:textColor="#B7A496"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <Button
+        android:id="@+id/goregister"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:background="@android:color/transparent"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E9BD43"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:buttonTint="#FFFFFF"
+        android:text="I agree with Terms &amp; Conditions"
+        android:textColor="#B7A496"
+        app:layout_constraintBottom_toTopOf="@+id/regButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
